@@ -1,0 +1,9 @@
+Package: pr2-kinect2-config
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Rahul Rawat <rrawat@clearpathrobotics.com>
+Installed-Size: 29
+Provides: pr2-kinect-config
+Section: config
+Priority: extra
+Description: Appends to pr2-c1 upstart file which spawns kinect2_bridge on the Intel Nuc

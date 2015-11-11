@@ -1,0 +1,12 @@
+Source: pr2-kinect2-config
+Section:config
+Priority: extra
+Maintainer: Rahul Rawat <rrawat@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9), config-package-dev (>= 4.5~)
+Standards-Version: 3.7.2
+
+Package: pr2-kinect2-config
+Architecture: any
+Depends: 
+Description: Appends to pr2-c1 upstart file which spawns kinect2_bridge on the Intel Nuc
+Provides: pr2-kinect-config

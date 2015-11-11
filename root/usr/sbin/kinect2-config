@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo 'appending kinect2_bridge launch to upstart file...'
+sudo sed -e 's:</launch>:<node machine="pr2-head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge"/> \
+</launch>:i' /etc/ros/robot.launch
+echo 'kinect2_bridge appended to upstart!'
+
