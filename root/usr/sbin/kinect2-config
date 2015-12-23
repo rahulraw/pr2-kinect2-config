@@ -7,7 +7,9 @@ then
     echo "groovy exists..."
     sudo sed -i 's:</launch>:\
     <machine name="pr2head" address="pr2head" user="pr2-head" password="clearpath" env-loader="/home/pr2-head/kinect_ws/devel/env.sh"/>\
-    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge"/>\
+    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge">\
+    <param name="publish_tf" value="true"/>\
+    </node>\
     \
     </launch>:i' /etc/ros/groovy/robot.launch
 fi
@@ -17,7 +19,9 @@ then
     echo "hydro exists..."
     sudo sed -i 's:</launch>:\
     <machine name="pr2head" address="pr2head" user="pr2-head" password="clearpath" env-loader="/home/pr2-head/kinect_ws/devel/env.sh"/>\
-    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge"/>\
+    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge">\
+    <param name="publish_tf" value="true"/>\
+    </node>\
     \
     </launch>:i' /etc/ros/hydro/robot.launch
 fi
@@ -27,14 +31,18 @@ then
     echo "indigo exists..."
     sudo sed -i 's:</launch>:\
     <machine name="pr2head" address="pr2head" user="pr2-head" password="clearpath" env-loader="/home/pr2-head/kinect_ws/devel/env.sh"/>\
-    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge"/>\
+    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge">\
+    <param name="publish_tf" value="true"/>\
+    </node>\
     \
     </launch>:i' /etc/ros/indigo/robot.launch
 fi
 
 sudo sed -i 's:</launch>:\
     <machine name="pr2head" address="pr2head" user="pr2-head" password="clearpath" env-loader="/home/pr2-head/kinect_ws/devel/env.sh"/>\
-    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge"/>\
+    <node machine="pr2head" pkg="kinect2_bridge" type="kinect2_bridge" name="kinect2_bridge">\
+    <param name="publish_tf" value="true"/>\
+    </node>\
     \
     </launch>:i' /etc/ros/robot.launch
 
