@@ -2,7 +2,7 @@
 
 echo 'appending kinect2_bridge launch to upstart file...'
 
-if [ -d "/etc/ros/hydro" ];
+if [ -d "/etc/ros/groovy" ];
 then
     echo "groovy exists..."
     sudo sed -i 's:</launch>:\
